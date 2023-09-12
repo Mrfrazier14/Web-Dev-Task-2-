@@ -2,7 +2,7 @@
 /* Font family declaration */
 body {
     font-family: Arial, sans-serif;
-    background-color: aliceblue;
+    background-color: blue;
 }
 
 /* Element selector to style headers */
@@ -39,4 +39,97 @@ a:hover {
 
 .relative-position {
     position: relative;
+}
+/* Style for the header */
+header {
+    background-color: #0074a2; /* Change background color as desired */
+    color: #fff; /* Text color */
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Style for the navigation bar */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Style for the search bar */
+#search-form {
+    margin-top: 20px;
+}
+
+#search-bar {
+    width: 300px; /* Adjust width as needed */
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+#search-bar:focus {
+    outline: none;
+    box-shadow: 0 0 5px #0074a2; /* Add a subtle shadow when focused */
+}
+
+button[type="submit"] {
+    background-color: #0074a2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Center the Nevada image */
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%; /* Ensure the image is not wider than its container */
+}
+
+/* Style for the static unordered list */
+ul {
+    list-style-type: square; /* Change the bullet style as desired */
+    margin: 20px 0;
+    padding-left: 30px;
+    text color: black;
+}
+
+/* Style for the table */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #0074a2; /* Border color for table cells */
+}
+/* Style for the data table container */
+#data-table {
+    float: right; /* Float the table to the right side */
+    margin-right: 20px; /* Add some margin to separate it from the content */
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #0074a2; /* Header cell background color */
+    color: #fff;
 }
