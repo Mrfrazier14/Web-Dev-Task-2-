@@ -1,0 +1,42 @@
+
+/* Font family declaration */
+body {
+    font-family: Arial, sans-serif;
+    background-color: aliceblue;
+}
+
+/* Element selector to style headers */
+h1 {
+    color: #333;
+}
+
+/* Class selector to style specific elements */
+.city-info {
+    font-weight: bold;
+}
+
+/* ID selector to format specific elements */
+#population {
+    color: blue;
+}
+
+/* Hover effect */
+a:hover {
+    text-decoration: underline;
+}
+
+/* Float property */
+.float-left {
+    float: left;
+}
+
+/* Absolute and relative CSS positioning */
+.absolute-position {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.relative-position {
+    position: relative;
+}
