@@ -91,5 +91,54 @@
             </tr>
         </table>
     </section>
+    <!-- Form section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
+            </div>
+            <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm-email">Confirm Email Address</label>
+                <input type="email" id="confirm-email" name="confirm-email" placeholder="Confirm your email" required>
+            </div>
+            <div class="form-group">
+                <label for="question">Question or Comment</label>
+                <textarea id="question" name="question" placeholder="Type your question or comment here"></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const email = document.getElementById("email");
+            const confirmEmail = document.getElementById("confirm-email");
+    
+            email.addEventListener("input", function () {
+                if (email.value !== confirmEmail.value) {
+                    confirmEmail.setCustomValidity("Email addresses must match");
+                } else {
+                    confirmEmail.setCustomValidity("");
+                }
+            });
+    
+            confirmEmail.addEventListener("input", function () {
+                if (email.value !== confirmEmail.value) {
+                    confirmEmail.setCustomValidity("Email addresses must match");
+                } else {
+                    confirmEmail.setCustomValidity("");
+                }
+            });
+        });
+    </script>
 </body>
 </html>
