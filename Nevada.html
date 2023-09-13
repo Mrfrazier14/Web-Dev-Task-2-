@@ -91,6 +91,7 @@
             </tr>
         </table>
     </section>
+
     <!-- Form section -->
     <section id="contact">
         <h2>Contact Us</h2>
@@ -118,27 +119,12 @@
             <button type="submit">Submit</button>
         </form>
     </section>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const email = document.getElementById("email");
-            const confirmEmail = document.getElementById("confirm-email");
+    <div id="success-message" style="display: none;">
+        <p>Thank you for contacting us! Someone will get back to you soon.</p>
+    </div>
     
-            email.addEventListener("input", function () {
-                if (email.value !== confirmEmail.value) {
-                    confirmEmail.setCustomValidity("Email addresses must match");
-                } else {
-                    confirmEmail.setCustomValidity("");
-                }
-            });
-    
-            confirmEmail.addEventListener("input", function () {
-                if (email.value !== confirmEmail.value) {
-                    confirmEmail.setCustomValidity("Email addresses must match");
-                } else {
-                    confirmEmail.setCustomValidity("");
-                }
-            });
-        });
-    </script>
+    <footer>
+        <!-- Footer content here -->
+    </footer>
 </body>
 </html>
