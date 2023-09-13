@@ -1,36 +1,48 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const form = document.getElementById("contact-form");
-  const successMessage = document.getElementById("success-message");
+  const emailField = document.getElementById("email");
+  const confirmEmailField = document.getElementById("confirm-email");
+  const emailError = document.getElementById("email-error");
+  const contactForm = document.getElementById("contact-form");
 
-  form.addEventListener("submit", function (event) {
-      event.preventDefault();
-
-      // Validate email fields (for example, check if they match)
-      const email = document.getElementById("email").value;
-      const confirmEmail = document.getElementById("confirm-email").value;
+  // Function to validate email fields
+  function validateEmails() {
+      const email = emailField.value.trim();
+      const confirmEmail = confirmEmailField.value.trim();
 
       if (email !== confirmEmail) {
-          alert("Email addresses must match.");
-          return; // Prevent form submission if emails don't match
+          emailError.textContent = "Email addresses do not match.";
+          return false;
+      } else {
+          emailError.textContent = "";
+          return true;
       }
+  }
 
-      // Fetch request to send data to the PHP script
-      fetch(form.action, {
-          method: "POST",
-          body: new FormData(form),
-      })
-      .then(response => response.text())
-      .then(data => {
-          if (data === "success") {
-              // Hide the form and display success message
-              form.style.display = "none";
-              successMessage.style.display = "block";
-          } else {
-              alert("An error occurred. Please try again later.");
-          }
-      })
-      .catch(error => {
-          console.error("Error:", error);
-      });
-  });
+ // Inside your handleSubmit function
+function handleSubmit(event) {
+  event.preventDefault(); // Prevent the default form submission
+
+  // Validate email addresses
+  if (validateEmails()) {
+      // Form is valid; you can submit the form to your server or perform other actions here
+      document.getElementById("confirmation-message").textContent = "Thank you for your submission. We will contact you soon!";
+  } else {
+      // Form is not valid; do not submit
+      alert("Form submission failed. Please correct the errors.");
+  }
+}
+
+
+ // Inside your JavaScript code
+document.getElementById("contact-form").reset();
+document.getElementById("confirmation-message").textContent = "";
+
+
+// Add event listener for email field and confirm email field
+  emailField.addEventListener("input", validateEmails);
+  confirmEmailField.addEventListener("input", validateEmails);
+
+  // Add event listener for form submission
+  contactForm.addEventListener("submit", handleSubmit);
 });
+
