@@ -46,3 +46,10 @@ document.getElementById("confirmation-message").textContent = "";
   contactForm.addEventListener("submit", handleSubmit);
 });
 
+// JavaScript to handle form submission
+document.getElementById("search-form").addEventListener("submit", function (event) {
+  event.preventDefault(); // Prevent the default form submission
+  const searchInput = document.getElementById("search-input").value;
+  // Implement your search logic here
+  alert("Searching for: " + searchInput);
+});
