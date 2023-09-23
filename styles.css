@@ -122,7 +122,7 @@ table, th, td {
 
 /* Style for the data table container */
 #data-table {
-    float: right; /* Float the table to the right side */
+    float: center; /* Float the table to the right side */
     margin-right: 20px; /* Add some margin to separate it from the content */
 }
 
