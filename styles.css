@@ -110,6 +110,14 @@ ul {
 }
 
 /* Style for the table */
+/* Style for the table container */
+#data-table {
+    text-align: center; /* Center the table horizontally */
+    margin: 0 auto; /* Center the table within its container */
+    max-width: 80%; /* Limit the maximum width to make it smaller */
+}
+
+/* Style for table */
 table {
     border-collapse: collapse;
     width: 100%;
@@ -117,23 +125,17 @@ table {
 }
 
 table, th, td {
-    border: 1px solid black; /* Border color for table cells */
-}
-
-/* Style for the data table container */
-#data-table {
-    float: center; /* Float the table to the center */
-    margin-right: 5px; /* Add some margin to separate it from the content */
+    border: 1px solid #fffdfd;
 }
 
 th, td {
-    padding: 10px;
-    text-align: left;
+    padding: 5px; /* Reduce padding for smaller cells */
+    text-align: center;
 }
 
 th {
-    background-color: black; /* Header cell background color */
-    color: white;
+    background-color: #ff9800;
+    color: #fff;
 }
 
 /* Style for the form section */
