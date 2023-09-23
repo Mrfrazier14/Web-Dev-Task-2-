@@ -122,8 +122,8 @@ table, th, td {
 
 /* Style for the data table container */
 #data-table {
-    float: center; /* Float the table to the right side */
-    margin-right: 20px; /* Add some margin to separate it from the content */
+    float: center; /* Float the table to the center */
+    margin-right: 5px; /* Add some margin to separate it from the content */
 }
 
 th, td {
