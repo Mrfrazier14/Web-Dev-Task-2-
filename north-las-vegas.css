@@ -113,5 +113,5 @@ footer {
 /* CSS to Keep the Footer at the Bottom */
 body {
     position: relative;
-    margin-bottom: 100px; /* Adjust this value to match your footer height */
+    margin-bottom: 10px; /* Adjust this value to match your footer height */
 }
