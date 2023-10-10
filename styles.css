@@ -98,7 +98,7 @@ nav ul li a {
 img {
     display: block;
     margin: 0 auto;
-    max-width: 100%; /* Ensure the image is not wider than its container */
+    max-width: 50%; /* Ensure the image is not wider than its container */
 }
 
 /* Style for the static unordered list */
@@ -119,7 +119,7 @@ ul {
 /* Style for table */
 table {
     border-collapse: collapse;
-    width: 100%;
+    width: 25%;
     margin-top: 20px;
 }
 
@@ -133,7 +133,7 @@ th, td {
 }
 
 th {
-    background-color: #ff9800;
+background-color: blue;
     color: #fff;
 }
 
