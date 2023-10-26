@@ -98,7 +98,7 @@ nav ul li a {
 img {
     display: block;
     margin: 0 auto;
-    max-width: 50%; /* Ensure the image is not wider than its container */
+    max-width: 10%; /* Ensure the image is not wider than its container */
 }
 
 /* Style for the static unordered list */

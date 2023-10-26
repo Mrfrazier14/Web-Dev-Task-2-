@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const emailField = document.getElementById("email");
   const confirmEmailField = document.getElementById("confirm-email");
-  const emailError = document.getElementById("email-error");
+  const emailMatchMessage = document.getElementById("email-match-message");
 
   // Function to validate email fields
   function validateEmails() {
@@ -9,13 +9,13 @@ document.addEventListener("DOMContentLoaded", function () {
       const confirmEmail = confirmEmailField.value.trim();
 
       if (email !== confirmEmail) {
-          emailError.textContent = "Email addresses do not match.";
+          emailMatchMessage.textContent = "Email addresses do not match.";
       } else {
-          emailError.textContent = "Good job!";
+          emailMatchMessage.textContent = "Email addresses match!";
       }
   }
 
-  // Add event listeners for email fields
+  // Add event listener for email field and confirm email field
   emailField.addEventListener("input", validateEmails);
   confirmEmailField.addEventListener("input", validateEmails);
 });
