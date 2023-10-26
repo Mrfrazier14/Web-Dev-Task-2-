@@ -1,8 +1,51 @@
-<form id="contact-form" action="process_form.php" method="post">
-    <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
-    <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
-    <input type="email" id="email" name="email" placeholder="Email" required>
-    <input type="email" id="confirm-email" name="confirm-email" placeholder="Confirm Email" required>
-    <textarea id="question" name="question" placeholder="Your Question or Comment" required></textarea>
-    <button type="submit">Submit</button>
-</form>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+ <!-- Include your stylesheet link here -->
+    <title>Contact Us</title>
+    <header>
+        <nav>
+         <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="carson-city.html">Capital</a></li>
+            <li><a href="north-las-vegas.html">North Las Vegas</a></li>
+            <li><a href="henderson.html">Henderson</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+         </ul>
+        </nav>
+
+        <h1>Contact Us</h1>
+    </header>
+
+</head>
+<body>
+    <form id="contact-form">
+        <div class="form-group">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
+        </div>
+        <div class="form-group">
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email-address" name="email" placeholder="Enter your email address" required>
+        </div>
+        <div class="form-group">
+            <label for="confirm-email">Confirm Email Address</label>
+            <input type="email" id="confirm-email-address" name="confirm-email" placeholder="Confirm your email address" required>
+        </div>
+        <div class="form-group">
+            <label for="question">Your Question or Comment</label>
+            <textarea id="question-or-comment" name="question" placeholder="Ask your question or leave a comment" required></textarea>
+        </div>
+        <button type="submit" id="submit-button">Submit</button>
+    </form>
+    <p id="email-match-message"></p>
+    <script src="contact.js"></script>
+</body>
+</html>

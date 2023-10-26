@@ -1,0 +1,106 @@
+/* Style for the Contact Us page header */
+h1 {
+    text-align: center;
+}
+
+/* Style for the contact form container */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Style for the header */
+header {
+    background-color: rgb(7, 158, 2); /* Change background color as desired */
+    color: black; /* Text color */
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Style for the navigation bar */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: Black;
+    font-weight: bold;
+}
+
+/* Style for the search bar */
+#search-form {
+    margin-top: 20px;
+}
+
+#search-input {
+    width: 300px; /* Adjust width as needed */
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+#search-input:focus {
+    outline: none;
+    box-shadow: 0 0 5px black; /* Add a subtle shadow when focused */
+}
+
+#search-button {
+    background-color: rgb(7, 158, 2);
+    color: black; /* Text color */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+/* Style for labels */
+label {
+    font-weight: bold;
+    display: block;
+}
+
+/* Style for input fields and textareas */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style for the submit button */
+#submit-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style for the email match message */
+#email-match-message {
+    text-align: center;
+    font-weight: bold;
+    color: #007BFF;
+    margin-top: 10px;
+}
+
+/* Add more styles as needed */
+
+/* Optional: Responsive design */
+@media (max-width: 600px) {
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+    }
+}

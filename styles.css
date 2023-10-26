@@ -17,7 +17,7 @@ h1 {
 
 /* ID selector to format specific elements */
 #population {
-    color: blue;
+    color: rgb(7, 158, 2);
 }
 
 /* Hover effect */
@@ -43,7 +43,7 @@ a:hover {
 
 /* Style for the header */
 header {
-    background-color: blue; /* Change background color as desired */
+    background-color: rgb(7, 158, 2); /* Change background color as desired */
     color: black; /* Text color */
     text-align: center;
     padding: 20px 0;
@@ -85,7 +85,7 @@ nav ul li a {
 }
 
 #search-button {
-    background-color: blue;
+    background-color: rgb(7, 158, 2);
     color: black; /* Text color */
     border: none;
     border-radius: 5px;
@@ -133,7 +133,7 @@ th, td {
 }
 
 th {
-background-color: blue;
+background-color: rgb(7, 158, 2);
     color: #fff;
 }
 
@@ -142,7 +142,7 @@ background-color: blue;
     margin: 20px auto; /* Center the form horizontally */
     max-width: 600px; /* Limit the form width */
     padding: 20px;
-    background-color: blue;
+    background-color: rgb(7, 158, 2);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     color: black; /* Text color */
@@ -176,7 +176,7 @@ textarea {
 
 /* Style for the submit button */
 button[type="submit"] {
-    background-color: blue;
+    background-color: rgb(7, 158, 2);
     color: black;
     padding: 10px 20px;
     border: none;
@@ -243,7 +243,7 @@ footer {
 }
 
 .footer-content a {
-    color: blue;
+    color: rgb(7, 158, 2);
     text-decoration: none;
 }
 
